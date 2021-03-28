@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<title>Business Development Lead Form</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<style>
+			body {margin: 20px 0;font-family:sans-serif;font-size:14px;}
+			h1 {text-align:center;font-size:120%;margin-bottom:20px;}
+			form {width:640px;margin:20px auto;}
+			label {display:inline-block;width:30%;vertical-align:top;padding-top:6px;}
+			input, select, textarea, .language {font-size:14px;display:inline-block;width:68%;padding:6px;border:1px solid #999;margin:3px 0;}
+			div.language {margin-left:30%;border:none;font-size:11px;}
+			select {width: 40%;}
+			input.submit {padding:10px;display:block;margin:20px 0 20px auto;width:30%;background:#4db5ab;color:#fff;border:1px solid #367d77;}
+			input.submit:hover {background:#367d77;}
+		</style>
+		<script type= "text/javascript" src = "countries.js"></script>
+	</head>
+	
+	<body>
+		<form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+			
+			<h1>Business Development Lead Form</h1>
+			
+			<hr /><br />
+			
+			<input type="hidden" name="debug" value=1>
+			<input type="hidden" name="debugEmail" value="jim.mitchell@vizio.com"> 
+
+			<input type=hidden name="oid" value="00D1k0000009ddO">
+			<input type=hidden name="retURL" value="#">
+
+			<input type=hidden name="recordType" value="0121k000000VZzW">
+			<input type=hidden name="lead_source" value="Website">
+
+			<label for="first_name">First Name</label>
+			<input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required="required" />
+
+			<label for="last_name">Last Name</label>
+			<input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required="required" />
+
+			<label for="title">Title</label>
+			<input  id="title" maxlength="40" name="title" size="20" type="text" required="required" />
+
+			<label for="company">Company</label>
+			<input  id="company" maxlength="40" name="company" size="20" type="text" required="required" />
+
+			<label for="email">Email</label>
+			<input  id="email" maxlength="80" name="email" size="20" type="email" required="required" />
+
+			<label for="phone">Phone</label>
+			<input  id="phone" maxlength="40" name="phone" size="20" type="tel" required="required" />
+
+			<label for="url">Website</label>
+			<input  id="url" maxlength="80" name="url" size="20" type="url" required="required" />
+
+			<label for="street">Street Address</label>
+			<input id="street" name="street" size="80" type="text" required="required"></input>
+
+			<label for="city">City</label>
+			<input  id="city" maxlength="40" name="city" size="20" type="text" required="required" />
+
+			<label for="country">Country</label>
+			<select id="country" name ="country" required="required"></select>
+
+			<label for="state">State/Province</label>
+			<select name ="state" id ="state" disabled="disabled">
+				<option value="">Select a State</option>
+			</select>
+
+			<label for="zip">Zip/Postal Code</label>
+			<input  id="zip" maxlength="20" name="zip" size="20" type="text" required="required" />
+
+			<label for="description">Description</label>
+			<textarea id="description" name="description" rows="4"></textarea>
+			
+			<div class="language">
+			<p>Please read the linked <a href="VIZIO_Business_Development_Mutual_NDA.pdf" target="_blank">Mutual Nondisclosure Agreement (“Agreement”)</a> carefully before proceeding.</p>
+			<p>By entering in your Company information and clicking to “Accept” this Agreement, you and the Company you represent (“Company”) agree to be bound by the terms of this Agreement. The person accepting this Agreement on behalf of Company represents and warrants that he or she is authorized and lawfully able to bind Company to this Agreement and that the information provided for purposes of accepting this Agreement is up-to-date and accurate. This Agreement forms a Legal Contract between VIZIO, Inc. (“VIZIO”) and Company. If there exists a separate Agreement governing the exchange of confidential information between VIZIO and Company (“Separate Agreement”), the Separate Agreement will take precedence over this Agreement. Company should print and retain a copy of this Agreement for its records.</p>
+			</div>
+			<label for="00N1k0000033OTA">NDA Signed By</label>
+			<input  id="00N1k0000033OTA" maxlength="150" name="00N1k0000033OTA" size="20" type="text" placeholder="Type your full legal name" required="required" />
+
+			<input class="submit" type="submit" name="submit" value="Accept and Continue" />
+
+		</form>
+		<script language="javascript">
+			populateCountries("country", "state");
+		</script>
+	</body>
+</html>

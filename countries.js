@@ -1,0 +1,287 @@
+var country_arr = new Array("Afghanistan","Aland Islands","Albania","Algeria","Andorra","Angola","Anguilla","Antarctica","Antigua and Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia, Plurinational State of","Bonaire, Sint Eustatius and Saba","Bosnia and Herzegovina","Botswana","Bouvet Island","Brazil","British Indian Ocean Territory","Brunei Darussalam","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Cayman Islands","Central African Republic","Chad","Chile","China","Chinese Taipei","Christmas Island","Cocos (Keeling) Islands","Colombia","Comoros","Congo","Congo, the Democratic Republic of the","Cook Islands","Costa Rica","Cote d'Ivoire","Croatia","Cuba","Curaçao","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Ethiopia","Falkland Islands (Malvinas)","Faroe Islands","Fiji","Finland","France","French Guiana","French Polynesia","French Southern Territories","Gabon","Gambia","Georgia","Germany","Ghana","Gibraltar","Greece","Greenland","Grenada","Guadeloupe","Guatemala","Guernsey","Guinea","Guinea-Bissau","Guyana","Haiti","Heard Island and McDonald Islands","Holy See (Vatican City State)","Honduras","Hungary","Iceland","India","Indonesia","Iran, Islamic Republic of","Iraq","Ireland","Isle of Man","Israel","Italy","Jamaica","Japan","Jersey","Jordan","Kazakhstan","Kenya","Kiribati","Korea, Democratic People's Republic of","Korea, Republic of","Kuwait","Kyrgyzstan","Lao People's Democratic Republic","Latvia","Lebanon","Lesotho","Liberia","Libyan Arab Jamahiriya","Liechtenstein","Lithuania","Luxembourg","Macao","Macedonia, the former Yugoslav Republic of","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Martinique","Mauritania","Mauritius","Mayotte","Mexico","Moldova, Republic of","Monaco","Mongolia","Montenegro","Montserrat","Morocco","Mozambique","Myanmar","Namibia","Nauru","Nepal","Netherlands","New Caledonia","New Zealand","Nicaragua","Niger","Nigeria","Niue","Norfolk Island","Norway","Oman","Pakistan","Palestinian Territory, Occupied","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Pitcairn","Poland","Portugal","Qatar","Reunion","Romania","Russian Federation","Rwanda","Saint Barthélemy","Saint Helena, Ascension and Tristan da Cunha","Saint Kitts and Nevis","Saint Lucia","Saint Martin (French part)","Saint Pierre and Miquelon","Saint Vincent and the Grenadines","Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Sint Maarten (Dutch part)","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Georgia and the South Sandwich Islands","South Sudan","Spain","Sri Lanka","Sudan","Suriname","Svalbard and Jan Mayen","Swaziland","Sweden","Switzerland","Syrian Arab Republic","Tajikistan","Tanzania, United Republic of","Thailand","Timor-Leste","Togo","Tokelau","Tonga","Trinidad and Tobago","Tunisia","Turkey","Turkmenistan","Turks and Caicos Islands","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States","Uruguay","Uzbekistan","Vanuatu","Venezuela, Bolivarian Republic of","Viet Nam","Virgin Islands, British","Wallis and Futuna","Western Sahara","Yemen","Zambia","Zimbabwe");
+
+var s_a = new Array();
+s_a[0]="";
+s_a[1]="";
+s_a[2]="";
+s_a[3]="";
+s_a[4]="";
+s_a[5]="";
+s_a[6]="";
+s_a[7]="";
+s_a[8]="";
+s_a[9]="";
+s_a[10]="";
+s_a[11]="";
+s_a[12]="";
+s_a[13]="Australian Capital Territory|New South Wales|Northern Territory|Queensland|South Australia|Tasmania|Victoria|Western Australia";
+s_a[14]="";
+s_a[15]="";
+s_a[16]="";
+s_a[17]="";
+s_a[18]="";
+s_a[19]="";
+s_a[20]="";
+s_a[21]="";
+s_a[22]="";
+s_a[23]="";
+s_a[24]="";
+s_a[25]="";
+s_a[26]="";
+s_a[27]="";
+s_a[28]="";
+s_a[29]="";
+s_a[30]="";
+s_a[31]="Acre|Alagoas|Amazonas|Amapá|Bahia|Ceará|Distrito Federal|Espírito Santo|Goiás|Maranhão|Minas Gerais|Mato Grosso do Sul|Mato Grosso|Pará|Paraíba|Pernambuco|Piauí|Paraná|Rio de Janeiro|Rio Grande do Norte|Rondônia|Roraima|Rio Grande do Sul|Santa Catarina|Sergipe|São Paulo|Tocantins";
+s_a[32]="";
+s_a[33]="";
+s_a[34]="";
+s_a[35]="";
+s_a[36]="";
+s_a[37]="";
+s_a[38]="";
+s_a[39]="Alberta|British Columbia|Manitoba|New Brunswick|Newfoundland and Labrador|Nova Scotia|Northwest Territories|Nunavut|Ontario|Prince Edward Island|Quebec|Saskatchewan|Yukon Territories";
+s_a[40]="";
+s_a[41]="";
+s_a[42]="";
+s_a[43]="";
+s_a[44]="";
+s_a[45]="Anhui|Beijing|Chinese Taipei|Chongqing|Fujian|Gansu|Guangdong|Guangxi|Guizhou|Hainan|Hebei|Heilongjiang|Henan|Hong Kong|Hubei|Hunan|Jiangsu|Jiangxi|Jilin|Liaoning|Macao|Nei Mongol|Ningxia|Qinghai|Shaanxi|Shandong|Shanghai|Shanxi|Sichuan|Tianjin|Xinjiang|Xizang|Yunnan|Zhejiang";
+s_a[46]="";
+s_a[47]="";
+s_a[48]="";
+s_a[49]="";
+s_a[50]="";
+s_a[51]="";
+s_a[52]="";
+s_a[53]="";
+s_a[54]="";
+s_a[55]="";
+s_a[56]="";
+s_a[57]="";
+s_a[58]="";
+s_a[59]="";
+s_a[60]="";
+s_a[61]="";
+s_a[62]="";
+s_a[63]="";
+s_a[64]="";
+s_a[65]="";
+s_a[66]="";
+s_a[67]="";
+s_a[68]="";
+s_a[69]="";
+s_a[70]="";
+s_a[71]="";
+s_a[72]="";
+s_a[73]="";
+s_a[74]="";
+s_a[75]="";
+s_a[76]="";
+s_a[77]="";
+s_a[78]="";
+s_a[79]="";
+s_a[80]="";
+s_a[81]="";
+s_a[82]="";
+s_a[83]="";
+s_a[84]="";
+s_a[85]="";
+s_a[86]="";
+s_a[87]="";
+s_a[88]="";
+s_a[89]="";
+s_a[90]="";
+s_a[91]="";
+s_a[92]="";
+s_a[93]="";
+s_a[94]="";
+s_a[95]="";
+s_a[96]="";
+s_a[97]="";
+s_a[98]="";
+s_a[99]="";
+s_a[100]="";
+s_a[101]="Andaman and Nicobar Islands|Andhra Pradesh|Arunachal Pradesh|Assam|Bihar|Chandigarh|Chhattisgarh|Daman and Diu|Delhi|Dadra and Nagar Haveli|Goa|Gujarat|Himachal Pradesh|Haryana|Jharkhand|Jammu and Kashmir|Karnataka|Kerala|Lakshadweep|Maharashtra|Meghalaya|Manipur|Madhya Pradesh|Mizoram|Nagaland|Odisha|Punjab|Puducherry|Rajasthan|Sikkim|Tamil Nadu|Tripura|Uttar Pradesh|Uttarakhand|West Bengal";
+s_a[102]="";
+s_a[103]="";
+s_a[104]="";
+s_a[105]="Clare|Cavan|Cork|Carlow|Dublin|Donegal|Galway|Kildare|Kilkenny|Kerry|Longford|Louth|Limerick|Leitrim|Laois|Meath|Monaghan|Mayo|Offaly|Roscommon|Sligo|Tipperary|Waterford|Westmeath|Wicklow|Wexford";
+s_a[106]="";
+s_a[107]="";
+s_a[108]="Agrigento|Alessandria|Ancona|Aosta|Ascoli Piceno|L'Aquila|Arezzo|Asti|Avellino|Bari|Bergamo|Biella|Belluno|Benevento|Bologna|Brindisi|Brescia|Barletta-Andria-Trani|Bolzano|Cagliari|Campobasso|Caserta|Chieti|Carbonia-Iglesias|Caltanissetta|Cuneo|Como|Cremona|Cosenza|Catania|Catanzaro|Enna|Forlì-Cesena|Ferrara|Foggia|Florence|Fermo|Frosinone|Genoa|Gorizia|Grosseto|Imperia|Isernia|Crotone|Lecco|Lecce|Livorno|Lodi|Latina|Lucca|Monza and Brianza|Macerata|Messina|Milan|Mantua|Modena|Massa and Carrara|Matera|Naples|Novara|Nuoro|Ogliastra|Oristano|Olbia-Tempio|Palermo|Piacenza|Padua|Pescara|Perugia|Pisa|Pordenone|Prato|Parma|Pistoia|Pesaro and Urbino|Pavia|Potenza|Ravenna|Reggio Calabria|Reggio Emilia|Ragusa|Rieti|Rome|Rimini|Rovigo|Salerno|Siena|Sondrio|La Spezia|Syracuse|Sassari|Savona|Taranto|Teramo|Trento|Turin|Trapani|Terni|Trieste|Treviso|Udine|Varese|Verbano-Cusio-Ossola|Vercelli|Venice|Vicenza|Verona|Medio Campidano|Viterbo|Vibo Valentia";
+s_a[109]="";
+s_a[110]="";
+s_a[111]="";
+s_a[112]="";
+s_a[113]="";
+s_a[114]="";
+s_a[115]="";
+s_a[116]="";
+s_a[117]="";
+s_a[118]="";
+s_a[119]="";
+s_a[120]="";
+s_a[121]="";
+s_a[122]="";
+s_a[123]="";
+s_a[124]="";
+s_a[125]="";
+s_a[126]="";
+s_a[127]="";
+s_a[128]="";
+s_a[129]="";
+s_a[130]="";
+s_a[131]="";
+s_a[132]="";
+s_a[133]="";
+s_a[134]="";
+s_a[135]="";
+s_a[136]="";
+s_a[137]="";
+s_a[138]="";
+s_a[139]="";
+s_a[140]="";
+s_a[141]="Aguascalientes|Baja California|Baja California Sur|Chihuahua|Colima|Campeche|Coahuila|Chiapas|Federal District|Durango|Guerrero|Guanajuato|Hidalgo|Jalisco|Mexico State|Michoacán|Morelos|Nayarit|Nuevo León|Oaxaca|Puebla|Querétaro|Quintana Roo|Sinaloa|San Luis Potosí|Sonora|Tabasco|Tlaxcala|Tamaulipas|Veracruz|Yucatán|Zacatecas";
+s_a[142]="";
+s_a[143]="";
+s_a[144]="";
+s_a[145]="";
+s_a[146]="";
+s_a[147]="";
+s_a[148]="";
+s_a[149]="";
+s_a[150]="";
+s_a[151]="";
+s_a[152]="";
+s_a[153]="";
+s_a[154]="";
+s_a[155]="";
+s_a[156]="";
+s_a[157]="";
+s_a[158]="";
+s_a[159]="";
+s_a[160]="";
+s_a[161]="";
+s_a[162]="";
+s_a[163]="";
+s_a[164]="";
+s_a[165]="";
+s_a[166]="";
+s_a[167]="";
+s_a[168]="";
+s_a[169]="";
+s_a[170]="";
+s_a[171]="";
+s_a[172]="";
+s_a[173]="";
+s_a[174]="";
+s_a[175]="";
+s_a[176]="";
+s_a[177]="";
+s_a[178]="";
+s_a[179]="";
+s_a[180]="";
+s_a[181]="";
+s_a[182]="";
+s_a[183]="";
+s_a[184]="";
+s_a[185]="";
+s_a[186]="";
+s_a[187]="";
+s_a[188]="";
+s_a[189]="";
+s_a[190]="";
+s_a[191]="";
+s_a[192]="";
+s_a[193]="";
+s_a[194]="";
+s_a[195]="";
+s_a[196]="";
+s_a[197]="";
+s_a[198]="";
+s_a[199]="";
+s_a[200]="";
+s_a[201]="";
+s_a[202]="";
+s_a[203]="";
+s_a[204]="";
+s_a[205]="";
+s_a[206]="";
+s_a[207]="";
+s_a[208]="";
+s_a[209]="";
+s_a[210]="";
+s_a[211]="";
+s_a[212]="";
+s_a[213]="";
+s_a[214]="";
+s_a[215]="";
+s_a[216]="";
+s_a[217]="";
+s_a[218]="";
+s_a[219]="";
+s_a[220]="";
+s_a[221]="";
+s_a[222]="";
+s_a[223]="";
+s_a[224]="";
+s_a[225]="";
+s_a[226]="";
+s_a[227]="";
+s_a[228]="Armed Forces Americas|Armed Forces Europe|Alaska|Alabama|Armed Forces Pacific|Arkansas|American Samoa|Arizona|California|Colorado|Connecticut|District of Columbia|Delaware|Florida|Federated Micronesia|Georgia|Guam|Hawaii|Iowa|Idaho|Illinois|Indiana|Kansas|Kentucky|Louisiana|Massachusetts|Maryland|Maine|Marshall Islands|Michigan|Minnesota|Missouri|Northern Mariana Islands|Mississippi|Montana|North Carolina|North Dakota|Nebraska|New Hampshire|New Jersey|New Mexico|Nevada|New York|Ohio|Oklahoma|Oregon|Pennsylvania|Puerto Rico|Palau|Rhode Island|South Carolina|South Dakota|Tennessee|Texas|United States Minor Outlying Islands|Utah|Virginia|US Virgin Islands|Vermont|Washington|Wisconsin|West Virginia|Wyoming";
+s_a[229]="";
+s_a[230]="";
+s_a[231]="";
+s_a[232]="";
+s_a[233]="";
+s_a[234]="";
+s_a[235]="";
+s_a[236]="";
+s_a[237]="";
+s_a[238]="";
+s_a[239]="";
+
+function populateStates( countryElementId, stateElementId ){
+	
+	var selectedCountryIndex = document.getElementById( countryElementId ).selectedIndex;
+
+	var stateElement = document.getElementById( stateElementId );
+	
+	stateElement.length=0;	// Fixed by Julian Woods
+	stateElement.options[0] = new Option('Select a State','');
+	stateElement.selectedIndex = 0;
+	
+	var state_arr = s_a[selectedCountryIndex].split("|");
+	
+	if (state_arr.length > 1) {
+		stateElement.disabled=false;
+		stateElement.required='required';
+	}
+	else {
+		stateElement.disabled=true;
+	}
+	
+	for (var i=0; i<state_arr.length; i++) {
+		stateElement.options[stateElement.length] = new Option(state_arr[i],state_arr[i]);
+	}
+}
+
+function populateCountries(countryElementId, stateElementId){
+	// given the id of the <select> tag as function argument, it inserts <option> tags
+	var countryElement = document.getElementById(countryElementId);
+	countryElement.length=0;
+	countryElement.options[0] = new Option('Select a Country','-1');
+	countryElement.selectedIndex = 0;
+	for (var i=0; i<country_arr.length; i++) {
+		countryElement.options[countryElement.length] = new Option(country_arr[i],country_arr[i]);
+	}
+
+	// Assigned all countries. Now assign event listener for the states.
+
+	if( stateElementId ){
+		countryElement.onchange = function(){
+			populateStates( countryElementId, stateElementId );
+		};
+	}
+}
